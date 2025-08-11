@@ -1,0 +1,19 @@
+.footer {
+    min-height: 60px;
+    width: 100%;
+    background: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding: 1rem 0;
+}
+
+.footer p {
+    color: #cccccc;
+    font-size: 1rem;
+    font-weight: normal;
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+}

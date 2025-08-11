@@ -1,0 +1,116 @@
+.heroSection {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  background: #1a1a1a;
+}
+
+.heroSection::after {
+  content: '';
+  position: absolute;
+  top: 1rem;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url('../../media/HeroSection5.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  /* filter: blur(1px); Blur only the background image */
+  z-index: 0;
+}
+
+.heroSection::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.3);
+  /* Dark overlay for better contrast */
+  z-index: 1;
+}
+
+.heroContent {
+  max-width: 1200px;
+  width: 100%;
+  padding: 0 2rem;
+  text-align: center;
+  z-index: 2;
+  position: relative;
+}
+
+.heroContent h1 {
+  color: white;
+  font-size: 4rem;
+  font-weight: bold;
+  font-family: 'Arial', sans-serif;
+  margin-bottom: 1rem;
+  line-height: 1.5;
+}
+
+.heroContent h1 span {
+  color: #007bff;
+  /* Blue color for "Moonbami" */
+}
+
+.heroContent h2 {
+  color: #cccccc;
+  /* Light gray color for subtitle text */
+  font-size: 1.5rem;
+  font-weight: normal;
+  font-family: 'Arial', sans-serif;
+  margin: 0.3rem 0;
+  line-height: 1.4;
+}
+
+.heroContent h2 span {
+  color: #007bff;
+  /* Blue color for highlighted words */
+  font-weight: bold;
+}
+
+.heroContent h3 {
+  color: #cccccc;
+  /* Light gray color for subtitle text */
+  font-size: 1.5rem;
+  font-weight: normal;
+  font-family: 'Arial', sans-serif;
+  margin: 0.3rem 0;
+  line-height: 1.1;
+}
+
+.heroContent h3 span {
+  color: #007bff;
+  /* Blue color for highlighted words */
+  font-weight: bold;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .heroSection::after {
+    background-attachment: scroll;
+    /* Better performance on mobile */
+  }
+
+  .heroContent {
+    padding: 0 1rem;
+  }
+
+  .heroContent h1 {
+    font-size: 2.5rem;
+  }
+
+  .heroContent h2 {
+    font-size: 1rem;
+  }
+
+  .heroContent h3 {
+    font-size: 1rem;
+  }
+}
