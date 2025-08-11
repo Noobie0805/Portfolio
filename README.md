@@ -51,25 +51,18 @@ myportfolio/
 ├── public/
 ├── src/
 │   ├── components/
-│   ├── assets/
+│   ├── media/
 │   ├── App.js
 │   └── ...
 ├── package.json
 └── README.md
 ```
 
-## 📸 Screenshots
-
-_Add screenshots of your portfolio here!_
 
 ## 📬 Contact
 
-Feel free to reach out via [email@example.com](mailto:email@example.com) or connect with me on [LinkedIn](https://linkedin.com/in/yourprofile).
+Feel free to reach out via [sarvjeet852003@gmail.com](mailto:sarvjeet852003@gmail.com) or connect with me on [LinkedIn](https://www.linkedin.com/in/sarvjeet-kumar-505999262/).
 
-## 📝 License
 
-This project is open source and available under the [MIT License](LICENSE).
 
----
-
-_This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app)._
+© All rights reserved under Sarvjeet Kumar.
