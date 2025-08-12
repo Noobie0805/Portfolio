@@ -1,0 +1,107 @@
+.TerminalChat {
+    width: 80%;
+    margin: 0 auto 2rem auto;
+}
+
+.TerminalChat_box {
+    background: rgba(255, 255, 255, 0.02);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 25px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 6px 24px rgba(0, 0, 0, 0.3);
+}
+
+.TerminalChat_box h2 {
+    color: #007bff;
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+    text-align: center;
+    text-shadow: 0 0 8px rgba(0, 123, 255, 0.3);
+}
+
+.TerminalChat_box p {
+    color: #cccccc;
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.TerminalChat_tech {
+    margin-bottom: 20px;
+}
+
+.TerminalChat_tech h3 {
+    color: #007bff;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: center;
+    text-shadow: 0 0 8px rgba(0, 123, 255, 0.2);
+}
+
+.TerminalChat_tech ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.TerminalChat_tech li {
+    color: #cccccc;
+    font-size: 0.9rem;
+    padding: 8px 16px;
+    background: rgba(0, 123, 255, 0.1);
+    border-radius: 6px;
+    border: 1px solid rgba(0, 123, 255, 0.2);
+    transition: all 0.3s ease;
+}
+
+.TerminalChat_tech li:hover {
+    background: rgba(0, 123, 255, 0.2);
+    transform: translateY(-2px);
+}
+
+.TerminalChat_tech strong {
+    color: #ffffff;
+    font-weight: 600;
+}
+
+.TerminalChat_github {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.github_link {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: rgba(0, 123, 255, 0.1);
+    color: #007bff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    border: 1px solid rgba(0, 123, 255, 0.3);
+    transition: all 0.3s ease;
+    font-weight: 500;
+}
+
+.github_link:hover {
+    background: rgba(0, 123, 255, 0.2);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 16px rgba(0, 123, 255, 0.3);
+}
+
+.github_link svg {
+    font-size: 1.2rem;
+}
+
+.TerminalChat_box_sample {
+    margin-top: 20px;
+}

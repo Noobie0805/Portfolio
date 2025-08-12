@@ -41,23 +41,23 @@ const NavBar = () => {
         <div className={Style.navMenu}>
           <button
             className={Style.navLink}
-            onClick={() => handleNavClick('work')}
+            onClick={() => handleNavClick('Projects')}
           >
-            Work
+            Projects
           </button>
 
           <button
             className={Style.navLink}
             onClick={() => handleNavClick('stack')}
           >
-            Stack
+            Tech Stack
           </button>
 
           <button
             className={Style.navLink}
             onClick={() => handleNavClick('leet')}
           >
-            Leet
+            Leet Profile
           </button>
 
           <button

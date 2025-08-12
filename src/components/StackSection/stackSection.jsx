@@ -16,7 +16,7 @@ import {
 } from 'react-icons/si';
 import {DiVisualstudio} from 'react-icons/di'
 import { BiLogoVisualStudio } from "react-icons/bi";
-import {PiFileSqlBold } from "react-icons/pi";
+import {PiFileSqlBold , PiHardHatBold } from "react-icons/pi";
 
 const StackSection = () => {
   return (
@@ -79,7 +79,7 @@ const StackSection = () => {
               <SiReact className={Style.techIconSvg} />
             </div>
             <div className={Style.techIcon}>
-              <SiSolidity className={Style.techIconSvg} />
+              <PiHardHatBold className={Style.techIconSvg} />
             </div>
           </div>
         </div>

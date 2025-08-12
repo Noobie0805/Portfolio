@@ -1,5 +1,18 @@
 .workSection {
-    width: 100%;
-    background-color: #1a1a1a;
-    padding: 4rem 0rem;
+  width: 100%;
+  background-color: #1a1a1a;
+  padding: 4rem 0rem;
+  color: white;
+  /* margin-top: 8rem; */
+}
+
+.workSection_title {
+  text-align: center;
+  color: #ffffff;
+  font-size: 3.5rem;
+  font-weight: bold;
+  font-family: 'Arial', sans-serif;
+  margin-bottom: 4rem;
+  margin-top: 8rem;
+  text-shadow: 0 0 20px rgba(0, 123, 255, 0.5);
 }

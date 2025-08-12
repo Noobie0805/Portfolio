@@ -1,0 +1,162 @@
+.NFTMarket_box{
+    margin:4rem 0;
+}
+
+
+.NFTMarket_image {
+    width: 400px;
+    height: 300px;
+    height: auto;
+}
+
+.NFTMarket_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.NFTMarket_buttons {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.project_button {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: rgba(0, 123, 255, 0.1);
+    color: #007bff;
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    border: 1px solid rgba(0, 123, 255, 0.3);
+    transition: all 0.3s ease;
+    font-weight: 500;
+    font-size: 0.9rem;
+}
+
+.project_button:hover {
+    background: rgba(0, 123, 255, 0.2);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 16px rgba(0, 123, 255, 0.3);
+}
+
+.project_button svg {
+    font-size: 1rem;
+}
+
+.NFTMarket_content {
+    display: flex;
+    gap: 40px;
+    align-items: flex-start;
+    margin-top: 20px;
+}
+
+.NFTMarket_slider_container {
+    flex: 0 0 auto;
+    width: 100%;
+    max-width: 600px;
+    margin-top: 20px;
+}
+
+.NFTMarket_description_container {
+    flex: 1;
+    text-align: left;
+}
+
+.NFTMarket_title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #007bff;
+    margin: 0;
+    text-shadow: 0 0 10px rgba(0, 123, 255, 0.3);
+}
+
+.NFTMarket_overview,
+.NFTMarket_tech {
+    margin-bottom: 25px;
+}
+
+.NFTMarket_overview h3,
+.NFTMarket_tech h3 {
+    color: #007bff;
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-bottom: 12px;
+    text-shadow: 0 0 8px rgba(0, 123, 255, 0.2);
+}
+
+.NFTMarket_overview p {
+    color: #cccccc;
+    font-size: 1rem;
+    line-height: 1.6;
+    margin: 0;
+}
+
+.NFTMarket_tech ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.NFTMarket_tech li {
+    color: #cccccc;
+    font-size: 0.95rem;
+    margin-bottom: 12px;
+    padding-left: 20px;
+    position: relative;
+    line-height: 1.5;
+}
+
+.NFTMarket_tech li::before {
+    content: "▸";
+    color: #007bff;
+    position: absolute;
+    left: 0;
+    font-weight: bold;
+}
+
+.NFTMarket_tech strong {
+    color: #ffffff;
+    font-weight: 600;
+}
+
+.NFTMarket_box {
+    padding: 25px 15px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Responsive design for mobile */
+@media (max-width: 768px) {
+    .NFTMarket_header {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+    
+    .NFTMarket_buttons {
+        justify-content: center;
+    }
+    
+    .NFTMarket_content {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .NFTMarket_slider_container {
+        max-width: 100%;
+    }
+    
+    .NFTMarket_description_container {
+        text-align: center;
+    }
+    
+    .NFTMarket_overview p {
+        text-align: center;
+    }
+}

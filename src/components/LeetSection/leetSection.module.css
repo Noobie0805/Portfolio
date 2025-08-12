@@ -4,11 +4,11 @@
   background: #1a1a1a;
   position: relative;
   padding: 4rem 0rem;
-  margin: 4rem 0;
+  /* margin: 4rem 0; */
 }
 
 .leetContainer {
-  max-width: 1200px;
+  max-width: 1000px;
   margin: 0 auto;
   position: relative;
   z-index: 2;
