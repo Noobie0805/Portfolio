@@ -53,18 +53,18 @@ const NFTMarket = () => {
         <div className={Style.NFTMarket_header}>
           <h2 className={Style.NFTMarket_title}>Decentralized NFT Marketplace</h2>
           <div className={Style.NFTMarket_buttons}>
-            <a 
-              href="https://github.com/Noobie0805/NFT-Marketplace" 
-              target="_blank" 
+            <a
+              href="https://github.com/Noobie0805/nft-template"
+              target="_blank"
               rel="noopener noreferrer"
               className={Style.project_button}
             >
               <FaGithub />
               <span>GitHub</span>
             </a>
-            <a 
-              href="https://nft-marketplace-demo.vercel.app" 
-              target="_blank" 
+            <a
+              href="https://nft-marketplace-demo.vercel.app"
+              target="_blank"
               rel="noopener noreferrer"
               className={Style.project_button}
             >
@@ -73,12 +73,12 @@ const NFTMarket = () => {
             </a>
           </div>
         </div>
-        
+
         <div className={Style.NFTMarket_content}>
           <div className={Style.NFTMarket_slider_container}>
             <ImageSlider images={nftImages} />
           </div>
-          
+
           <div className={Style.NFTMarket_description_container}>
             <div className={Style.NFTMarket_overview}>
               <h3>Overview</h3>
@@ -86,7 +86,7 @@ const NFTMarket = () => {
                 A blockchain-powered decentralized marketplace built on the Ethereum testnet, enabling users to mint, trade, and securely store digital assets as NFTs. The platform provides a seamless, transparent, and trustless environment for asset exchange, ensuring security through on-chain transactions and wallet-based authentication.
               </p>
             </div>
-            
+
             <div className={Style.NFTMarket_tech}>
               <h3>Technologies Used</h3>
               <ul>

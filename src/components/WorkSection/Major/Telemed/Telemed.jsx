@@ -48,18 +48,18 @@ const Telemed = () => {
                 <div className={Style.Telemed_header}>
                     <h2 className={Style.Telemed_title}>Telemedix</h2>
                     <div className={Style.Telemed_buttons}>
-                        <a 
-                            href="https://github.com/Noobie0805/Telemedix" 
-                            target="_blank" 
+                        <a
+                            href="https://github.com/Noobie0805/TeleMed"
+                            target="_blank"
                             rel="noopener noreferrer"
                             className={Style.project_button}
                         >
                             <FaGithub />
                             <span>GitHub</span>
                         </a>
-                        <a 
-                            href="https://telemedix-demo.vercel.app" 
-                            target="_blank" 
+                        <a
+                            href="https://telemedix-demo.vercel.app"
+                            target="_blank"
                             rel="noopener noreferrer"
                             className={Style.project_button}
                         >
@@ -68,7 +68,7 @@ const Telemed = () => {
                         </a>
                     </div>
                 </div>
-                
+
                 <div className={Style.Telemed_content}>
                     <div className={Style.Telemed_description_container}>
                         <div className={Style.Telemed_overview}>
@@ -77,7 +77,7 @@ const Telemed = () => {
                                 An AI-driven telemedicine platform that provides healthcare services through intelligent symptom analysis, automated consultations, and real-time video sessions. The platform provides accessible, efficient, and personalized healthcare services while maintaining the standards of medical care and user privacy.
                             </p>
                         </div>
-                        
+
                         <div className={Style.Telemed_tech}>
                             <h3>Technologies Used</h3>
                             <ul>
@@ -89,9 +89,9 @@ const Telemed = () => {
                             </ul>
                         </div>
                     </div>
-                    
+
                     <div className={Style.Telemed_slider_container}>
-                        <ImageSlider images={telemedImages} /> 
+                        <ImageSlider images={telemedImages} />
                     </div>
                 </div>
             </div>
