@@ -58,7 +58,7 @@ const Telemed = () => {
                             <span>GitHub</span>
                         </a>
                         <a
-                            href="https://telemedix-demo.vercel.app"
+                            href=""  //link here
                             target="_blank"
                             rel="noopener noreferrer"
                             className={Style.project_button}

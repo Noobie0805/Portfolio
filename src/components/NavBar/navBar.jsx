@@ -64,7 +64,7 @@ const NavBar = () => {
             className={Style.navLink}
             onClick={() => handleNavClick('contact')}
           >
-            Contact
+            Contact me
           </button>
         </div>
       </div>
