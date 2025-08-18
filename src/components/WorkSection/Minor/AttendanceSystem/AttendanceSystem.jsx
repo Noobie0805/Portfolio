@@ -25,7 +25,7 @@ const AttendanceSystem = () => {
 
                 <div className={Style.AttendanceSystem_github}>
                     <a
-                        href="https://github.com/Noobie0805/Attendance_System"
+                        href="https://github.com/Noobie0805/AttendanceSystem"
                         target="_blank"
                         rel="noopener noreferrer"
                         className={Style.github_link}
