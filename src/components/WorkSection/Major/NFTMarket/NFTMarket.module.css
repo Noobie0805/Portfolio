@@ -76,55 +76,91 @@
     text-shadow: 0 0 10px rgba(0, 123, 255, 0.3);
 }
 
-.NFTMarket_overview,
-.NFTMarket_tech {
-    margin-bottom: 25px;
+.NFTMarket_overview_card,
+.NFTMarket_tech_card,
+.NFTMarket_gallery {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(0, 123, 255, 0.2);
+    border-radius: 12px;
+    padding: 20px;
+    transition: all 0.3s ease;
 }
 
-.NFTMarket_overview h3,
-.NFTMarket_tech h3 {
+.NFTMarket_overview_card:hover,
+.NFTMarket_tech_card:hover,
+.NFTMarket_gallery:hover {
+    border-color: rgba(0, 123, 255, 0.4);
+    box-shadow: 0 8px 25px rgba(0, 123, 255, 0.1);
+}
+
+.NFTMarket_overview_card h3,
+.NFTMarket_tech_card h3,
+.NFTMarket_gallery h3 {
     color: #007bff;
     font-size: 1.3rem;
     font-weight: bold;
-    margin-bottom: 12px;
+    margin-bottom: 15px;
     text-shadow: 0 0 8px rgba(0, 123, 255, 0.2);
 }
 
-.NFTMarket_overview p {
+.NFTMarket_overview_card p {
     color: #cccccc;
     font-size: 1rem;
     line-height: 1.6;
     margin: 0;
 }
 
-.NFTMarket_tech ul {
-    list-style: none;
-    padding: 0;
+.NFTMarket_features_grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.feature_card {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(0, 123, 255, 0.2);
+    border-radius: 12px;
+    padding: 20px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.feature_card:hover {
+    transform: translateY(-5px);
+    border-color: rgba(0, 123, 255, 0.4);
+    box-shadow: 0 8px 25px rgba(0, 123, 255, 0.15);
+}
+
+.feature_icon {
+    font-size: 2rem;
+    color: #007bff;
+    margin-bottom: 10px;
+}
+
+.feature_card h4 {
+    color: #ffffff;
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.feature_card p {
+    color: #cccccc;
+    font-size: 0.9rem;
+    line-height: 1.5;
     margin: 0;
 }
 
-.NFTMarket_tech li {
-    color: #cccccc;
-    font-size: 0.95rem;
-    margin-bottom: 12px;
-    padding-left: 20px;
-    position: relative;
-    line-height: 1.5;
+.tech_badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
 }
 
-.NFTMarket_tech li::before {
-    content: "▸";
+.tech_badge {
+    background: rgba(0, 123, 255, 0.1);
     color: #007bff;
-    position: absolute;
-    left: 0;
-    font-weight: bold;
 }
-
-.NFTMarket_tech strong {
-    color: #ffffff;
-    font-weight: 600;
-}
-
 .NFTMarket_box {
     padding: 25px 15px;
     max-width: 1200px;

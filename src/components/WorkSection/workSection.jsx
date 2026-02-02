@@ -11,10 +11,10 @@ import Style from './workSection.module.css';
 
 const workSection = () => {
     return (
-        <div  id="Projects" className={Style.workSection}>
+        <div id="Projects" className={Style.workSection}>
             <div className={Style.workSection_title}>Projects</div>
-            <NFTMarket />
             <Telemed />
+            <NFTMarket />
             {/* <Portfolio /> */}
             <div className={Style.workSection_title}>Prototypes</div>
             <AttendanceSystem />

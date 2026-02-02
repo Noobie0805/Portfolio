@@ -7,38 +7,53 @@ const Telemed = () => {
     const telemedImages = [
         {
             src: require('../../../../media/Project Snapshots/Telemed/Hero.png'),
-            alt: 'Telemedix Hero Section',
+            alt: 'Landing Page',
             caption: 'Main landing page of the AI-driven telemedicine platform'
         },
         {
-            src: require('../../../../media/Project Snapshots/Telemed/Ai_symptom_checker_1.png'),
+            src: require('../../../../media/Project Snapshots/Telemed/AI-Assistant.png'),
+            alt: 'AI Assistant',
+            caption: 'Interactive symptom checking interface with AI recommendations'
+        },
+        {
+            src: require('../../../../media/Project Snapshots/Telemed/AI-SymptomChecker.png'),
             alt: 'AI Symptom Checker',
             caption: 'AI-powered symptom analysis and preliminary diagnosis'
         },
         {
-            src: require('../../../../media/Project Snapshots/Telemed/Ai_symptom_checker_2.png'),
-            alt: 'AI Symptom Checker Interface',
-            caption: 'Interactive symptom checking interface with AI recommendations'
+            src: require('../../../../media/Project Snapshots/Telemed/AI-Response.png'),
+            alt: 'AI Response',
+            caption: 'AI-powered symptom analysis and preliminary diagnosis'
         },
         {
-            src: require('../../../../media/Project Snapshots/Telemed/Book_consultation.png'),
-            alt: 'Book Consultation',
+            src: require('../../../../media/Project Snapshots/Telemed/AppointmentsPage.png'),
+            alt: 'Your Appointments',
             caption: 'Easy appointment booking and scheduling system'
         },
         {
-            src: require('../../../../media/Project Snapshots/Telemed/Video_session.png'),
+            src: require('../../../../media/Project Snapshots/Telemed/VideoConsultation.png'),
             alt: 'Video Session',
             caption: 'Real-time video consultation with healthcare providers'
         },
         {
-            src: require('../../../../media/Project Snapshots/Telemed/Q&A.png'),
-            alt: 'Q&A Section',
+            src: require('../../../../media/Project Snapshots/Telemed/DoctorsPage.png'),
+            alt: 'Doctors Listing',
             caption: 'Interactive question and answer platform for medical queries'
         },
         {
-            src: require('../../../../media/Project Snapshots/Telemed/Creators_section.png'),
-            alt: 'Healthcare Providers',
+            src: require('../../../../media/Project Snapshots/Telemed/patientSignup.png'),
+            alt: 'Patient Signup',
             caption: 'Showcasing qualified healthcare professionals and specialists'
+        },
+        {
+            src: require('../../../../media/Project Snapshots/Telemed/AdminDashboard.png'),
+            alt: 'Admin Dashboard',
+            caption: 'Administrative dashboard for managing users and appointments'
+        },
+        {
+            src: require('../../../../media/Project Snapshots/Telemed/DoctorDashboard.png'),
+            alt: 'Doctor Dashboard',
+            caption: 'Doctor dashboard for managing patient consultations and records'
         }
     ];
 
@@ -58,7 +73,7 @@ const Telemed = () => {
                             <span>GitHub</span>
                         </a>
                         <a
-                            href=""  //link here
+                            href="https://tele-med-eight.vercel.app/"  //link here
                             target="_blank"
                             rel="noopener noreferrer"
                             className={Style.project_button}

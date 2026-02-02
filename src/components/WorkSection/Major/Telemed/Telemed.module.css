@@ -1,6 +1,7 @@
-.Telemed_box{
-    margin:4rem 0;
+.Telemed_box {
+    margin: 4rem 0;
 }
+
 .Telemed_image {
     width: 400px;
     height: 300px;
@@ -74,53 +75,101 @@
     text-shadow: 0 0 10px rgba(0, 123, 255, 0.3);
 }
 
-.Telemed_overview,
-.Telemed_tech {
-    margin-bottom: 25px;
+.Telemed_overview_card,
+.Telemed_tech_card,
+.Telemed_gallery {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(0, 123, 255, 0.2);
+    border-radius: 12px;
+    padding: 20px;
+    transition: all 0.3s ease;
 }
 
-.Telemed_overview h3,
-.Telemed_tech h3 {
+.Telemed_overview_card:hover,
+.Telemed_tech_card:hover,
+.Telemed_gallery:hover {
+    border-color: rgba(0, 123, 255, 0.4);
+    box-shadow: 0 8px 25px rgba(0, 123, 255, 0.1);
+}
+
+.Telemed_overview_card h3,
+.Telemed_tech_card h3,
+.Telemed_gallery h3 {
     color: #007bff;
     font-size: 1.3rem;
     font-weight: bold;
-    margin-bottom: 12px;
+    margin-bottom: 15px;
     text-shadow: 0 0 8px rgba(0, 123, 255, 0.2);
 }
 
-.Telemed_overview p {
+.Telemed_overview_card p {
     color: #cccccc;
     font-size: 1rem;
     line-height: 1.6;
     margin: 0;
 }
 
-.Telemed_tech ul {
-    list-style: none;
-    padding: 0;
+.Telemed_features_grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.feature_card {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(0, 123, 255, 0.2);
+    border-radius: 12px;
+    padding: 20px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.feature_card:hover {
+    transform: translateY(-5px);
+    border-color: rgba(0, 123, 255, 0.4);
+    box-shadow: 0 8px 25px rgba(0, 123, 255, 0.15);
+}
+
+.feature_icon {
+    font-size: 2rem;
+    color: #007bff;
+    margin-bottom: 10px;
+}
+
+.feature_card h4 {
+    color: #ffffff;
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.feature_card p {
+    color: #cccccc;
+    font-size: 0.9rem;
+    line-height: 1.5;
     margin: 0;
 }
 
-.Telemed_tech li {
-    color: #cccccc;
-    font-size: 0.95rem;
-    margin-bottom: 12px;
-    padding-left: 20px;
-    position: relative;
-    line-height: 1.5;
+.tech_badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
 }
 
-.Telemed_tech li::before {
-    content: "▸";
+.tech_badge {
+    background: rgba(0, 123, 255, 0.1);
     color: #007bff;
-    position: absolute;
-    left: 0;
-    font-weight: bold;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 500;
+    border: 1px solid rgba(0, 123, 255, 0.3);
+    transition: all 0.3s ease;
 }
 
-.Telemed_tech strong {
-    color: #ffffff;
-    font-weight: 600;
+.tech_badge:hover {
+    background: rgba(0, 123, 255, 0.2);
+    transform: translateY(-2px);
 }
 
 .Telemed_box {
@@ -136,26 +185,25 @@
         text-align: center;
         gap: 20px;
     }
-    
+
     .Telemed_buttons {
         justify-content: center;
     }
-    
+
     .Telemed_content {
         flex-direction: column;
         gap: 20px;
     }
-    
+
     .Telemed_slider_container {
         max-width: 100%;
     }
-    
+
     .Telemed_description_container {
         text-align: center;
     }
-    
+
     .Telemed_overview p {
         text-align: center;
     }
 }
-

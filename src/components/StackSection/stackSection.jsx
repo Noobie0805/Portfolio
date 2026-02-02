@@ -1,29 +1,36 @@
 import React from 'react';
 import Style from './stackSection.module.css';
-import { 
-  SiC, 
-  SiCplusplus, 
-  SiMysql, 
-  SiJavascript, 
-  SiSolidity, 
+import {
+  SiC,
+  SiCplusplus,
+  SiMysql,
+  SiJavascript,
+  SiSolidity,
   SiPhp,
   SiGithub,
   SiExpress,
   SiNodedotjs,
   SiReact,
   SiMongodb,
-  SiPostgresql
+  SiPostgresql,
+  SiPostman,
+  SiVercel,
+  SiRender,
+  SiUpstash,
+  SiHuggingface,
+  SiDocker
 } from 'react-icons/si';
-import {DiVisualstudio} from 'react-icons/di'
+import { DiVisualstudio, DiRedis } from 'react-icons/di'
 import { BiLogoVisualStudio } from "react-icons/bi";
-import {PiFileSqlBold , PiHardHatBold } from "react-icons/pi";
+import { PiFileSqlBold, PiHardHatBold } from "react-icons/pi";
+
 
 const StackSection = () => {
   return (
     <div id="stack" className={Style.stackSection}>
       <div className={Style.stackContainer}>
         <h2 className={Style.sectionTitle}>Tech Stack</h2>
-        
+
         {/* Languages */}
         <div className={Style.techCategory}>
           <h3 className={Style.categoryTitle}>Languages</h3>
@@ -56,11 +63,29 @@ const StackSection = () => {
             <div className={Style.techIcon}>
               <SiGithub className={Style.techIconSvg} />
             </div>
-            <div className={Style.techIcon}>
+            {/* <div className={Style.techIcon}>
               <BiLogoVisualStudio className={Style.techIconSvg} />
-            </div>
+            </div> */}
             <div className={Style.techIcon}>
               <DiVisualstudio className={Style.techIconSvg} />
+            </div>
+            <div className={Style.techIcon}>
+              <SiPostman className={Style.techIconSvg} />
+            </div>
+            <div className={Style.techIcon}>
+              <SiVercel className={Style.techIconSvg} />
+            </div>
+            <div className={Style.techIcon}>
+              <SiRender className={Style.techIconSvg} />
+            </div>
+            <div className={Style.techIcon}>
+              <SiUpstash className={Style.techIconSvg} />
+            </div>
+            <div className={Style.techIcon}>
+              <SiHuggingface className={Style.techIconSvg} />
+            </div>
+            <div className={Style.techIcon}>
+              <SiDocker className={Style.techIconSvg} />
             </div>
           </div>
         </div>
@@ -96,6 +121,9 @@ const StackSection = () => {
             </div>
             <div className={Style.techIcon}>
               <SiMysql className={Style.techIconSvg} />
+            </div>
+            <div className={Style.techIcon}>
+              <DiRedis className={Style.techIconSvg} />
             </div>
           </div>
         </div>
