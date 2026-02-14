@@ -21,7 +21,7 @@ import {
   SiDocker
 } from 'react-icons/si';
 import { DiVisualstudio, DiRedis } from 'react-icons/di'
-import { BiLogoVisualStudio } from "react-icons/bi";
+// import { BiLogoVisualStudio } from "react-icons/bi";
 import { PiFileSqlBold, PiHardHatBold } from "react-icons/pi";
 
 

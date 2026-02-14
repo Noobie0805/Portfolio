@@ -4,7 +4,7 @@ import Telemed from './Major/Telemed/Telemed';
 import AttendanceSystem from './Minor/AttendanceSystem/AttendanceSystem';
 import Cron from './Minor/Cron/Cron';
 import TerminalChat from './Minor/TerminalChat/TerminalChat';
-import Portfolio from './Major/Portfolio/Portfolio';
+// import Portfolio from './Major/Portfolio/Portfolio';
 
 //internal imports
 import Style from './workSection.module.css';

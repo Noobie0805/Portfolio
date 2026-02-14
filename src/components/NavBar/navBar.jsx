@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import Style from './navBar.module.css';
-import logo from '../../media/logo.png';
+// import logo from '../../media/logo.png';
 import logo2 from '../../media/logo2.png';
 
 const NavBar = () => {

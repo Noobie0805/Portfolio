@@ -63,7 +63,7 @@ const NFTMarket = () => {
               <span>GitHub</span>
             </a>
             <a
-              href="" // link here
+              href="https://nft-template-qs9z.vercel.app/" // link here
               target="_blank"
               rel="noopener noreferrer"
               className={Style.project_button}
