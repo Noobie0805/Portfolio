@@ -38,18 +38,21 @@ def _is_greeting(message: str) -> bool:
 
 app = FastAPI(title="AI Portfolio API", version="1.0.0")
 
-allowed_origins = [
-    origin.strip()
-    for origin in os.getenv(
-        "APP_ORIGIN",
-        "http://localhost:3000,https://sarvjeet-portfolio.vercel.app",
-    ).split(",")
-    if origin.strip()
-]
+allowed_origins = []
+for origin in os.getenv(
+    "APP_ORIGIN",
+    "http://localhost:3000,https://sarvjeet-portfolio.vercel.app",
+).split(","):
+    normalized_origin = origin.strip().rstrip("/")
+    if normalized_origin:
+        allowed_origins.append(normalized_origin)
+
+allow_origin_regex = os.getenv("APP_ORIGIN_REGEX", "").strip() or None
 
 app.add_middleware(
     CORSMiddleware,
     allow_origins=allowed_origins,
+    allow_origin_regex=allow_origin_regex,
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
