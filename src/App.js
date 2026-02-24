@@ -10,6 +10,7 @@ import LeetSection from './components/LeetSection/leetSection';
 import ContactSection from './components/ContactSection/contactSection';
 import BackToTop from './components/BackToTop/BackToTop';
 import Footer from './components/Footer/Footer';
+import ChatWidget from './components/ChatWidget/ChatWidget';
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
       <ContactSection />
       <BackToTop />
       <Footer />
+      <ChatWidget />
     </div>
   );
 }

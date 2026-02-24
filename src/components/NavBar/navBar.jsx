@@ -60,6 +60,14 @@ const NavBar = () => {
             Leet Profile
           </button>
 
+          <a
+            className={Style.navLink}
+            href="/resume.pdf"
+            download
+          >
+            Resume
+          </a>
+
           <button
             className={Style.navLink}
             onClick={() => handleNavClick('contact')}
