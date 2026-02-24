@@ -37,11 +37,19 @@ def _is_greeting(message: str) -> bool:
     return all(token in GREETING_WORDS for token in tokens)
 
 app = FastAPI(title="AI Portfolio API", version="1.0.0")
-Base.metadata.create_all(bind=engine)
+
+allowed_origins = [
+    origin.strip()
+    for origin in os.getenv(
+        "APP_ORIGIN",
+        "http://localhost:3000,https://sarvjeet-portfolio.vercel.app",
+    ).split(",")
+    if origin.strip()
+]
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=[os.getenv("APP_ORIGIN", "http://localhost:3000")],
+    allow_origins=allowed_origins,
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
